@@ -14,6 +14,7 @@ def draw_9x9_board(pygame, how_big_square, color_surface_board):
 
     for i in range(10):
         # drawing lines of the grid
+        # the code for sudoku gridline (lines 15-28) wass written based on the youtube tutorial URL: https://youtu.be/I2lOwRiGNy4, (2:02 - 7:20)
         if i % 3 == 0:  # each third line is heavy line to indicate 3x3 boxes
             pygame.draw.line(surface, (0, 0, 0), (how_big_square * i, 0),
                              (how_big_square * i, 500), 4)
